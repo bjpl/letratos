@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ruby --version)",
+      "Bash(where ruby)",
+      "Bash(dir:*)",
+      "Bash(cmd /c:*)",
+      "Bash(powershell:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(C:Ruby34-x64binruby.exe --version)",
+      "Bash(git remote set-url:*)",
+      "Read(C:\\Users\\brand\\Development\\Project_Workspace/**)",
+      "Bash(xcopy:*)",
+      "Read(C:\\Users\\brand\\Development\\Project_Workspace\\letratos-clean/**)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

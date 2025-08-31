@@ -1,0 +1,44 @@
+---
+layout: default
+---
+<article class="poem">
+  <header class="poem-header">
+    <h1 class="poem-title">{{ page.title }}</h1>
+    {% if page.date %}
+    <time class="poem-date" datetime="{{ page.date | date_to_xmlschema }}">
+      {{ page.date | date: "%B %d, %Y" }}
+    </time>
+    {% endif %}
+    {% if page.collection_name %}
+    <span class="poem-collection">{{ page.collection_name }}</span>
+    {% endif %}
+  </header>
+
+  <div class="poem-content">
+    {{ content }}
+  </div>
+
+  {% if page.translation_url %}
+  <div class="translation-link">
+    <a href="{{ page.translation_url | relative_url }}">
+      {% if page.lang == 'es' %}Read in English{% else %}Leer en Español{% endif %}
+    </a>
+  </div>
+  {% endif %}
+
+  <nav class="poem-nav">
+    {% assign poems = site[page.collection] | sort: 'date' %}
+    {% for poem in poems %}
+      {% if poem.url == page.url %}
+        {% unless forloop.first %}
+          {% assign prev = forloop.index0 | minus: 1 %}
+          <a href="{{ poems[prev].url | relative_url }}" class="prev-poem">← {{ poems[prev].title }}</a>
+        {% endunless %}
+        {% unless forloop.last %}
+          {% assign next = forloop.index0 | plus: 1 %}
+          <a href="{{ poems[next].url | relative_url }}" class="next-poem">{{ poems[next].title }} →</a>
+        {% endunless %}
+      {% endif %}
+    {% endfor %}
+  </nav>
+</article>

@@ -1,0 +1,269 @@
+// Typography
+$font-serif: 'Crimson Text', 'Georgia', serif;
+$font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+// Colors
+$text-primary: #2c3e50;
+$text-secondary: #7f8c8d;
+$background: #fefefe;
+$accent: #3498db;
+$border: #ecf0f1;
+
+// Spacing
+$spacing-unit: 1.5rem;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-serif;
+  font-size: 18px;
+  line-height: 1.8;
+  color: $text-primary;
+  background: $background;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+// Header
+.site-header {
+  border-bottom: 1px solid $border;
+  padding: $spacing-unit 0;
+  margin-bottom: $spacing-unit * 2;
+}
+
+.site-nav {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 $spacing-unit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-title {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-decoration: none;
+  color: $text-primary;
+  letter-spacing: -0.02em;
+}
+
+.nav-links {
+  display: flex;
+  gap: $spacing-unit;
+  
+  a {
+    color: $text-secondary;
+    text-decoration: none;
+    font-family: $font-sans;
+    font-size: 0.9rem;
+    transition: color 0.2s;
+    
+    &:hover,
+    &.active {
+      color: $text-primary;
+    }
+  }
+}
+
+// Main content
+.main-content {
+  flex: 1;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 $spacing-unit;
+}
+
+// Poem styles
+.poem {
+  margin-bottom: $spacing-unit * 3;
+}
+
+.poem-header {
+  margin-bottom: $spacing-unit * 2;
+  text-align: center;
+}
+
+.poem-title {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.02em;
+}
+
+.poem-date,
+.poem-collection {
+  display: block;
+  font-family: $font-sans;
+  font-size: 0.85rem;
+  color: $text-secondary;
+  margin-top: 0.25rem;
+}
+
+.poem-content {
+  margin: $spacing-unit * 2 0;
+  
+  p {
+    margin-bottom: $spacing-unit;
+    white-space: pre-wrap;
+  }
+  
+  // Preserve line breaks and formatting
+  br {
+    display: block;
+    content: "";
+    margin-top: 0.5em;
+  }
+  
+  // Stanza breaks
+  .stanza {
+    margin-bottom: $spacing-unit;
+  }
+  
+  // Indentation classes
+  .indent-1 { padding-left: 2em; }
+  .indent-2 { padding-left: 4em; }
+  .indent-3 { padding-left: 6em; }
+}
+
+// Translation link
+.translation-link {
+  text-align: center;
+  margin: $spacing-unit * 2 0;
+  
+  a {
+    color: $accent;
+    text-decoration: none;
+    font-family: $font-sans;
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid $accent;
+    border-radius: 3px;
+    display: inline-block;
+    transition: all 0.2s;
+    
+    &:hover {
+      background: $accent;
+      color: white;
+    }
+  }
+}
+
+// Poem navigation
+.poem-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: $spacing-unit * 3;
+  padding-top: $spacing-unit;
+  border-top: 1px solid $border;
+  font-family: $font-sans;
+  font-size: 0.9rem;
+  
+  a {
+    color: $text-secondary;
+    text-decoration: none;
+    transition: color 0.2s;
+    
+    &:hover {
+      color: $text-primary;
+    }
+  }
+}
+
+// Collection pages
+.collection-page {
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: $spacing-unit * 2;
+    letter-spacing: -0.02em;
+  }
+}
+
+.poem-list {
+  list-style: none;
+  
+  li {
+    margin-bottom: $spacing-unit * 1.5;
+    padding-bottom: $spacing-unit * 1.5;
+    border-bottom: 1px solid $border;
+    
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+  
+  a {
+    text-decoration: none;
+    color: $text-primary;
+    
+    &:hover {
+      color: $accent;
+    }
+  }
+  
+  .poem-list-title {
+    font-size: 1.3rem;
+    margin-bottom: 0.25rem;
+  }
+  
+  .poem-list-meta {
+    font-family: $font-sans;
+    font-size: 0.85rem;
+    color: $text-secondary;
+  }
+  
+  .poem-excerpt {
+    margin-top: 0.5rem;
+    color: $text-secondary;
+    font-style: italic;
+  }
+}
+
+// Footer
+.site-footer {
+  margin-top: $spacing-unit * 3;
+  padding: $spacing-unit;
+  border-top: 1px solid $border;
+  text-align: center;
+  font-family: $font-sans;
+  font-size: 0.85rem;
+  color: $text-secondary;
+}
+
+// Experimental pages
+.experimental {
+  .experimental-content {
+    // Allow full HTML control
+    position: relative;
+  }
+}
+
+// Responsive
+@media (max-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+  
+  .site-nav {
+    flex-direction: column;
+    gap: $spacing-unit;
+  }
+  
+  .poem-title {
+    font-size: 1.5rem;
+  }
+  
+  .poem-nav {
+    flex-direction: column;
+    gap: $spacing-unit;
+    text-align: center;
+  }
+}
