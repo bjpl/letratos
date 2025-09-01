@@ -9,18 +9,28 @@ layout: default
     {% endif %}
   </header>
 
-  <div class="photography-gallery">
+  <div class="photography-container">
     {% if page.images %}
-      {% for image in page.images %}
-      <figure class="gallery-item">
-        <img src="{{ image.url | relative_url }}" alt="{{ image.alt | default: page.title }}" loading="lazy">
-        {% if image.caption %}
-        <figcaption>{{ image.caption }}</figcaption>
-        {% endif %}
-      </figure>
-      {% endfor %}
+      <div class="image-grid">
+        {% for image in page.images %}
+        <div class="grid-item">
+          <figure>
+            <img src="{{ image.url | relative_url }}" 
+                 alt="{{ image.alt | default: page.title }}" 
+                 loading="lazy"
+                 class="gallery-image"
+                 onclick="openLightbox('{{ image.url | relative_url }}', '{{ image.caption | escape }}')">
+            {% if image.caption %}
+            <figcaption class="image-caption">{{ image.caption }}</figcaption>
+            {% endif %}
+          </figure>
+        </div>
+        {% endfor %}
+      </div>
     {% else %}
-      {{ content }}
+      <div class="photography-content">
+        {{ content }}
+      </div>
     {% endif %}
   </div>
   
@@ -28,3 +38,90 @@ layout: default
     <a href="{{ '/photography/' | relative_url }}">← Back to Photography</a>
   </nav>
 </article>
+
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <span class="close">&times;</span>
+  <img id="lightbox-img" src="">
+  <div id="lightbox-caption"></div>
+</div>
+
+<style>
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.95);
+  cursor: pointer;
+}
+
+.lightbox.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 85vh;
+  object-fit: contain;
+  cursor: default;
+}
+
+.lightbox .close {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: 300;
+  transition: 0.3s;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.lightbox .close:hover {
+  color: #bbb;
+}
+
+#lightbox-caption {
+  color: #ccc;
+  font-size: 0.9rem;
+  padding: 10px 20px;
+  text-align: center;
+  font-family: 'Crimson Text', serif;
+  font-style: italic;
+  max-width: 700px;
+}
+</style>
+
+<script>
+function openLightbox(src, caption) {
+  const lightbox = document.getElementById('lightbox');
+  const img = document.getElementById('lightbox-img');
+  const captionText = document.getElementById('lightbox-caption');
+  
+  lightbox.classList.add('active');
+  img.src = src;
+  captionText.textContent = caption || '';
+  document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox() {
+  const lightbox = document.getElementById('lightbox');
+  lightbox.classList.remove('active');
+  document.body.style.overflow = 'auto';
+}
+
+// Close lightbox with Escape key
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') {
+    closeLightbox();
+  }
+});
+</script>
