@@ -57,8 +57,16 @@ Profundamente.
 
 ## 24
 
-"Acá, estamos acostumbrados
-a veinticuatro horas."
+“Acá, estamos acostumbrados
+a veinticuatro horas.”
 
 Y pensé, de golpe
-que yo había.
+que yo había perdido mucho
+
+Pero amigos me han dicho
+que doy el doscientos por ciento.
+
+Parece que Medellín
+es el dios que está diciendo
+que hay horas
+suficientes.
