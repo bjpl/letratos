@@ -6,7 +6,7 @@ title: Photography
 <div class="photography-index">
   <div class="collection-page">
     <h1>Photography</h1>
-    <p class="collection-intro">Photos and galleries | Recent</p>
+    <p class="collection-intro">Recent Photos</p>
   </div>
   
   {% if site.photography.size > 0 %}

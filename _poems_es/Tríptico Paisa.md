@@ -6,7 +6,7 @@ lang: es
 categories: [spanish, triptych, travel, introspection]
 ---
 
-# Hacia Medellín
+### Hacia Medellín
 
 En algunos momentos tienes que sentarte,
 mirando los árboles,
@@ -44,7 +44,7 @@ hacia Medellín.
 
 ---
 
-## En tránsito
+### En tránsito
 
 No estoy acá
 O allá.
@@ -55,7 +55,7 @@ Profundamente.
 
 ---
 
-## 24
+### 24
 
 “Acá, estamos acostumbrados
 a veinticuatro horas.”

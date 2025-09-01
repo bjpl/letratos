@@ -9,7 +9,7 @@ My news is not new.
 Your history is not past.
 
 But when you smile, my heart bursts
-Into a million futures.
+into a million futures.
 
 And when I breathe, your arms outstretched
-We find the truth, together.
+we find the truth, together.

@@ -1,7 +1,6 @@
 ---
 layout: photography
 title: "Bubbles"
-description: "Ephemeral moments captured in soap and light"
 date: 2024-01-15
 thumbnail: "/assets/images/Bubbles/bubbles_1.jpg"
 images:

@@ -1,7 +1,6 @@
 ---
 layout: photography
 title: "San Francisco in Black & White"
-description: "The city by the bay in monochrome"
 date: 2024-01-20
 thumbnail: "/assets/images/SF_B&W/SF_B&W_1.jpg"
 images:

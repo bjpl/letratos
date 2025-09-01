@@ -6,17 +6,18 @@ lang: es
 translation_url: "/en/about-collections/"
 ---
 
-Soy un coleccionista
+Soy un coleccionista.
+
 Pero no encontrarás mis especímenes
-En tu taxonomía.
+en tu taxonomía.
 
 Espero que vayas al bosque también
-Con tu red.
+con tu red.
 
 En la oscuridad y el hojarasco sentirás mucho
-Y cuando lo sientas, captúralo.
+y cuando lo sientas, captúralo.
 
 Fija ejemplares con agujas finas,
-Y cuando no puedas nombrarlos…
+y cuando no puedas nombrarlos
 
 Me entenderás mejor.

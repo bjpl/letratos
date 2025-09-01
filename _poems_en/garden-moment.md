@@ -13,6 +13,6 @@ the winged, landing
 on something shared willingly
 
 in a garden far removed, but closer
-to what I know to be true.
+to what I know to be true...
 
 Here, I am.

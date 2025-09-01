@@ -6,9 +6,9 @@ lang: en
 ---
 
 I was consumed by the moments before,
-Merging lanes, freshly painted 
+merging lanes, freshly painted 
 I tracked the new, toward my next exit.
 
 What was once unintended, now
-A sign, I veered
-Toward myself.
+a sign, I veered
+toward myself.
