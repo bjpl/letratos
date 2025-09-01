@@ -5,7 +5,7 @@ title: Photography
 
 <div class="collection-page photography-index">
   <h1>Photography</h1>
-  <p style="text-align: center; color: #7f8c8d; margin: 2rem 0;">Visual explorations and moments captured in light.</p>
+  <p class="collection-intro">Visual explorations and moments captured in light</p>
   
   {% if site.photography.size > 0 %}
   <div class="photography-grid">
@@ -26,6 +26,6 @@ title: Photography
     {% endfor %}
   </div>
   {% else %}
-  <p style="text-align: center; color: #7f8c8d; margin: 3rem 0;">Gallery coming soon.</p>
+  <p class="collection-intro" style="margin: 3rem 0;">Gallery coming soon</p>
   {% endif %}
 </div>

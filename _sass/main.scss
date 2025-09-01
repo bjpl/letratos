@@ -182,8 +182,17 @@ body {
     font-size: 2.5rem;
     font-weight: 400;
     text-align: center;
-    margin-bottom: $spacing-unit * 2;
+    margin-bottom: 1rem;
     letter-spacing: -0.02em;
+  }
+  
+  .collection-intro {
+    text-align: center;
+    color: $text-secondary;
+    margin: 0 0 $spacing-unit * 2;
+    font-size: 1.1rem;
+    font-family: $font-serif;
+    font-style: italic;
   }
 }
 
@@ -403,44 +412,80 @@ body {
 }
 
 // Photography page styles
+.photography {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .photography-header {
   text-align: center;
   margin-bottom: 3rem;
+  padding: 0 1.5rem;
 }
 
 .photography-title {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 400;
   margin-bottom: 1rem;
   letter-spacing: -0.02em;
+  font-family: $font-serif;
+  
+  @media (max-width: 600px) {
+    font-size: 2rem;
+  }
 }
 
 .photography-description {
   color: $text-secondary;
   font-style: italic;
+  font-size: 1.1rem;
+  font-family: $font-serif;
 }
 
 // Photography gallery
 .photography-gallery {
-  margin: 2rem 0;
+  margin: 3rem -1.5rem;
   
   .gallery-item {
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
+    position: relative;
     
     img {
       width: 100%;
       height: auto;
       display: block;
       margin: 0 auto;
+      max-width: 100%;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: box-shadow 0.3s;
+      
+      &:hover {
+        box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+      }
     }
     
     figcaption {
-      margin-top: 0.75rem;
+      margin-top: 1rem;
       text-align: center;
       color: $text-secondary;
-      font-size: 0.9rem;
-      font-family: $font-sans;
-      line-height: 1.5;
+      font-size: 0.95rem;
+      font-family: $font-serif;
+      font-style: italic;
+      line-height: 1.6;
+      padding: 0 1.5rem;
+    }
+    
+    &:last-child {
+      margin-bottom: 2rem;
+    }
+  }
+  
+  @media (min-width: 1000px) {
+    margin: 3rem 0;
+    
+    .gallery-item img {
+      max-width: 900px;
+      margin: 0 auto;
     }
   }
 }
@@ -448,22 +493,27 @@ body {
 // Photography grid for index page
 .photography-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 1.5rem;
-  margin: 2rem 0;
+  margin: 3rem 0;
   
   .photo-tile {
     position: relative;
     display: block;
     overflow: hidden;
-    border: 1px solid $border;
+    background: white;
     transition: all 0.3s;
     text-decoration: none;
     color: $text-primary;
+    aspect-ratio: 4/3;
     
     &:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      transform: translateY(-3px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+      
+      img {
+        transform: scale(1.05);
+      }
       
       .photo-tile-overlay {
         opacity: 1;
@@ -472,9 +522,10 @@ body {
     
     img {
       width: 100%;
-      height: 250px;
+      height: 100%;
       object-fit: cover;
       display: block;
+      transition: transform 0.5s;
     }
     
     .photo-tile-overlay {
@@ -482,22 +533,25 @@ body {
       bottom: 0;
       left: 0;
       right: 0;
-      background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+      background: linear-gradient(to top, rgba(0,0,0,0.85), rgba(0,0,0,0.5) 40%, transparent);
       color: white;
-      padding: 1.5rem 1rem 1rem;
+      padding: 2rem 1.25rem 1.25rem;
       opacity: 0;
       transition: opacity 0.3s;
       
       h2 {
-        font-size: 1.1rem;
+        font-size: 1.15rem;
         font-weight: 400;
-        margin-bottom: 0.25rem;
+        margin-bottom: 0.35rem;
+        font-family: $font-serif;
+        letter-spacing: -0.01em;
       }
       
       p {
         font-size: 0.85rem;
-        font-family: $font-sans;
-        opacity: 0.9;
+        font-family: $font-serif;
+        opacity: 0.95;
+        font-style: italic;
       }
     }
   }
@@ -522,8 +576,33 @@ body {
 }
 
 // Responsive photography
-@media (max-width: 600px) {
+@media (max-width: 768px) {
+  .photography-grid {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
   .photography-grid {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
+    
+    .photo-tile {
+      aspect-ratio: 3/2;
+    }
+  }
+  
+  .photography-gallery {
+    margin: 2rem -1rem;
+    
+    .gallery-item {
+      margin-bottom: 2.5rem;
+      
+      figcaption {
+        font-size: 0.9rem;
+        padding: 0 1rem;
+      }
+    }
   }
 }
