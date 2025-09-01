@@ -10,5 +10,5 @@ Merging lanes, freshly painted
 I tracked the new, toward my next exit.
 
 What was once unintended, now
-A sign for others, a choice to veer
-Toward yourself.
+A sign, I veered
+Toward myself.

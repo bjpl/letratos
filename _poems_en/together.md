@@ -5,11 +5,11 @@ date: 2024-02-01
 lang: en
 ---
 
-My news is not news to them
-Their history is not past to me.
+My news is not new.
+Your history is not past.
 
-But when they smile, my heart bursts              
+But when you smile, my heart bursts              
 Into a million futures.
 
-And when I breathe, their arms outstretched              
+And when I breathe, your arms outstretched              
 We find the truth, together.

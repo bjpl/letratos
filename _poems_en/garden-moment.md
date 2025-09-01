@@ -9,11 +9,10 @@ A leaf in the shape of a heart,
 A morning with energy and a pen
 
 Fed by sunshine, lust for 
-the winged angels landing
-
-On a fresh, crusty loaf, shared willingly.
+the winged, landing
+On something shared willingly.
 
 In a garden far removed, but closer
-To what you know to be true.
+To what I know to be true.
 
 Here, I am.

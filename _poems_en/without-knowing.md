@@ -6,9 +6,9 @@ lang: en
 ---
 
 That without you I still                                                                                                               
-Grow wiser, but wearier.
+grow wiser, but wearier.
                                                                        
 Some mornings I cry without
-Knowing, if my tears will drown the earth
+knowing, if my tears will drown the earth
                         
-Or sustain it.
+or sustain it.

@@ -5,9 +5,7 @@ date: 2025-09-01
 lang: en
 ---
 
-Another muse
-watching you watch
+Watching you watch
      the ocean
-would teach me
-     new ways
+taught me new ways
          to see water
