@@ -12,22 +12,6 @@ $border: #ecf0f1;
 // Spacing
 $spacing-unit: 1.5rem;
 
-// Skip link for accessibility
-.skip-link {
-  position: absolute;
-  top: -40px;
-  left: 0;
-  background: $text-primary;
-  color: white;
-  padding: 8px;
-  text-decoration: none;
-  z-index: 100;
-  
-  &:focus {
-    top: 0;
-  }
-}
-
 * {
   margin: 0;
   padding: 0;
