@@ -1,0 +1,69 @@
+title: Letratos
+email: contact@brandonjplambert.com
+description: >-
+  A bilingual poetry collection featuring Spanish and English poems,
+  with experimental HTML pieces and minimal, typography-focused design.
+baseurl: ""  # Will be updated when you provide the repo name
+url: ""  # Will be updated with your GitHub Pages URL
+github_username: bjpl
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Collections
+collections:
+  poems_es:
+    output: true
+    permalink: /es/:title/
+  poems_en:
+    output: true
+    permalink: /en/:title/
+  experimental:
+    output: true
+    permalink: /experimental/:title/
+
+# Default front matter
+defaults:
+  - scope:
+      path: ""
+      type: "poems_es"
+    values:
+      layout: "poem"
+      lang: "es"
+  - scope:
+      path: ""
+      type: "poems_en"
+    values:
+      layout: "poem"
+      lang: "en"
+  - scope:
+      path: ""
+      type: "experimental"
+    values:
+      layout: "experimental"
+
+# Language settings
+languages: ["en", "es"]
+default_lang: "en"
+
+# SASS settings
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - .sass-cache/
+  - .jekyll-cache/
+  - .jekyll-metadata
