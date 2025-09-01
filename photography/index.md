@@ -6,7 +6,7 @@ title: Photography
 <div class="photography-index">
   <div class="collection-page">
     <h1>Photography</h1>
-    <p class="collection-intro">Moments captured in light and shadow</p>
+    <p class="collection-intro">Photos and galleries | Recent</p>
   </div>
   
   {% if site.photography.size > 0 %}
