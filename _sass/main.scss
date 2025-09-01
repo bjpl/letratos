@@ -346,7 +346,7 @@ body {
   }
 }
 
-.experimental-link {
+.photography-link {
   margin-top: 3rem;
   
   a {
@@ -402,24 +402,108 @@ body {
   }
 }
 
-// Experimental page styles
-.experimental-header {
+// Photography page styles
+.photography-header {
   text-align: center;
   margin-bottom: 3rem;
 }
 
-.experimental-title {
+.photography-title {
   font-size: 2rem;
   font-weight: 400;
   margin-bottom: 1rem;
+  letter-spacing: -0.02em;
 }
 
-.experimental-description {
+.photography-description {
   color: $text-secondary;
   font-style: italic;
 }
 
-.experimental-nav {
+// Photography gallery
+.photography-gallery {
+  margin: 2rem 0;
+  
+  .gallery-item {
+    margin-bottom: 3rem;
+    
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+    
+    figcaption {
+      margin-top: 0.75rem;
+      text-align: center;
+      color: $text-secondary;
+      font-size: 0.9rem;
+      font-family: $font-sans;
+      line-height: 1.5;
+    }
+  }
+}
+
+// Photography grid for index page
+.photography-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+  
+  .photo-tile {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border: 1px solid $border;
+    transition: all 0.3s;
+    text-decoration: none;
+    color: $text-primary;
+    
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      
+      .photo-tile-overlay {
+        opacity: 1;
+      }
+    }
+    
+    img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      display: block;
+    }
+    
+    .photo-tile-overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+      color: white;
+      padding: 1.5rem 1rem 1rem;
+      opacity: 0;
+      transition: opacity 0.3s;
+      
+      h2 {
+        font-size: 1.1rem;
+        font-weight: 400;
+        margin-bottom: 0.25rem;
+      }
+      
+      p {
+        font-size: 0.85rem;
+        font-family: $font-sans;
+        opacity: 0.9;
+      }
+    }
+  }
+}
+
+.photography-nav {
   margin-top: 3rem;
   padding-top: 1.5rem;
   border-top: 1px solid $border;
@@ -434,5 +518,12 @@ body {
     &:hover {
       color: $text-primary;
     }
+  }
+}
+
+// Responsive photography
+@media (max-width: 600px) {
+  .photography-grid {
+    grid-template-columns: 1fr;
   }
 }

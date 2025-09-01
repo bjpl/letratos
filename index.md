@@ -19,10 +19,10 @@ title: Home
     </a>
   </div>
   
-  <div class="experimental-link">
-    <a href="{{ '/experimental/' | relative_url }}">
-      <h3>Experimental Pieces</h3>
-      <p>HTML-based artistic explorations</p>
+  <div class="photography-link">
+    <a href="{{ '/photography/' | relative_url }}">
+      <h3>Photography</h3>
+      <p>Visual moments and artistic explorations</p>
     </a>
   </div>
 </div>

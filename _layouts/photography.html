@@ -1,0 +1,30 @@
+---
+layout: default
+---
+<article class="photography">
+  <header class="photography-header">
+    <h1 class="photography-title">{{ page.title }}</h1>
+    {% if page.description %}
+    <p class="photography-description">{{ page.description }}</p>
+    {% endif %}
+  </header>
+
+  <div class="photography-gallery">
+    {% if page.images %}
+      {% for image in page.images %}
+      <figure class="gallery-item">
+        <img src="{{ image.url | relative_url }}" alt="{{ image.alt | default: page.title }}" loading="lazy">
+        {% if image.caption %}
+        <figcaption>{{ image.caption }}</figcaption>
+        {% endif %}
+      </figure>
+      {% endfor %}
+    {% else %}
+      {{ content }}
+    {% endif %}
+  </div>
+  
+  <nav class="photography-nav">
+    <a href="{{ '/photography/' | relative_url }}">← Back to Photography</a>
+  </nav>
+</article>

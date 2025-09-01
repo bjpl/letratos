@@ -22,9 +22,9 @@ collections:
   poems_en:
     output: true
     permalink: /en/:title/
-  experimental:
+  photography:
     output: true
-    permalink: /experimental/:title/
+    permalink: /photography/:title/
 
 # Default front matter
 defaults:
@@ -42,9 +42,9 @@ defaults:
       lang: "en"
   - scope:
       path: ""
-      type: "experimental"
+      type: "photography"
     values:
-      layout: "experimental"
+      layout: "photography"
 
 # Language settings
 languages: ["en", "es"]
