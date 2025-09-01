@@ -5,6 +5,6 @@ date: 2024-01-10
 thumbnail: "/assets/images/13/Escaleras sonriendo.jpg"
 images:
   - url: "/assets/images/13/Escaleras sonriendo.jpg"
-    caption: "Smiling on the stairs"
+    caption: "📍 Comuna 13, Medellín, CO"
     alt: "Portrait on stairway"
 ---
