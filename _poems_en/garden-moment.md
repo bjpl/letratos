@@ -5,14 +5,14 @@ date: 2024-01-20
 lang: en
 ---
 
-A leaf in the shape of a heart,
-A morning with energy and a pen
+Under a leaf in the shape of a heart,
+a morning with energy and a pen
 
-Fed by sunshine, lust for 
+fed by sunshine, lusting for 
 the winged, landing
-On something shared willingly.
+on something shared willingly
 
-In a garden far removed, but closer
-To what I know to be true.
+in a garden far removed, but closer
+to what I know to be true.
 
 Here, I am.
