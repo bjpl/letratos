@@ -3,7 +3,6 @@ layout: poem
 title: "Sobre colecciones"
 date: 2024-02-20
 lang: es
-translation_url: "/en/about-collections/"
 ---
 
 Soy un coleccionista.
