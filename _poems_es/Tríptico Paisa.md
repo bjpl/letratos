@@ -1,5 +1,5 @@
 ---
-title: "Hacia Medellín"
+title: "Tríptico Paisa"
 date: 2025-08-31
 layout: poem
 lang: es
