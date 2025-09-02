@@ -1,6 +1,40 @@
 # Letratos
 
-A bilingual poetry collection featuring Spanish and English poems with experimental HTML pieces.
+A bilingual poetry and photography collection featuring Spanish and English poems with experimental HTML pieces and photo galleries.
+
+## About
+
+Brandon is a California native who writes poetry in English and Spanish. He also takes photos.
+
+## Collections
+
+### Poetry
+
+#### English Poems
+- Another Muse
+- Garden Moment
+- Merging
+- Together
+- Without Knowing
+
+#### Spanish Poems
+- Tríptico Paisa (Paisa Triptych - containing Hacia Medellín, En Tránsito, and 24)
+- Sobre Colecciones
+
+### Photography
+
+Recent photo galleries showcasing moments from California and Colombia:
+
+- **13** - 📍 Comuna 13, Medellín, CO
+- **Babble** - 📍 Mountain View, CA
+- **Bubbles** - 📍 Mountain View, CA
+- **Busy** - 📍 Mountain View, CA
+- **Green** - 📍 Mountain View, CA
+- **Mariposa** - 📍 Mountain View, CA
+- **San Francisco in Black & White** - 📍 San Francisco, CA
+- **See Through** - 📍 Mountain View, CA
+- **Sky Frame** - 📍 Mountain View, CA
+- **Stamped** - 📍 Mountain View, CA
 
 ## Local Development
 
@@ -25,12 +59,21 @@ bundle exec jekyll serve
 
 - `_poems_en/` - English poems
 - `_poems_es/` - Spanish poems  
-- `_experimental/` - HTML-based artistic pieces
+- `_photography/` - Photography galleries
 - `_layouts/` - Page templates
 - `_sass/` - Styles
+- `assets/images/` - Photo collections organized by gallery
+
+## Features
+
+- Bilingual poetry collection (English/Spanish)
+- Minimalist, typography-focused design
+- Photography galleries with location tagging
+- Responsive layout for all devices
+- Clean navigation between languages and collections
 
 ## Deployment
 
 The site automatically deploys to GitHub Pages when you push to the main branch.
 
-Visit: https://brandonjplambert.github.io/letratos/
+Visit: https://bjpl.github.io/letratos/
