@@ -8,38 +8,35 @@ categories: [spanish, triptych, travel, introspection]
 
 ### Hacia Medellín
 
-En algunos momentos tienes que sentarte,
+En algunos momentos te sientas,
 mirando los árboles,
-sintiendo el viento ligero,
-viendo los gorriones,
-escuchando sus canciones,
-buscando tu propia versión.
+sintiendo la brisa,
+escuchando el aleteo de colibríes,
+encontrando el ritmo.
 
-Y en estos momentos vas, tal vez,
+Y en estos momentos vas
 hacia Medellín.
 
-En algunos momentos tienes que volver a amar,
+En algunos momentos vuelves a amar,
 viajando por nuevas rutas,
-compartiendo tu luz otra vez,
-jugando con los cuervos,
-vistiendo su disfraz,
+compartiendo tu luz,
+vistiendo el disfraz de cuervos,
 buscando tu propio conjunto.
 
-Para mí, ocurrió de repente;
+Para mí, llegó de golpe:
 mi mente, corazón, alma y cuerpo
 hacia Medellín.
 
-A miradores, colinas inclinadas,
-pero menos inclinadas que las mías.
+A miradores, lomas paradas,
+pero no tanto como las mías.
 
-En todo momento tienes que seguir las sonrisas,
+En todo momento sigues las sonrisas,
 respirando aire de sueños,
-encantándote con cualquier vaina,
-aprendiendo de las hojas en el río,
-cuando estás remando contra las corrientes,
-buscando tu propio flujo.
+aprendiendo de las hojas en el río
+cuando remas contracorriente,
+buscando tu propia corriente.
 
-Y por eso vas, tal vez,
+Y por eso vas
 hacia Medellín.
 
 ---
