@@ -4,21 +4,21 @@ title: Home
 ---
 
 <div class="home">
-  <img src="/letratos/assets/logotype.png" alt="Letratos" class="home-logo">
+  <img src="{{ '/assets/logotype.png' | relative_url }}" alt="Letratos" class="home-logo">
   <p class="site-intro">A bilingual collection of poetry and visual art.</p>
   
   <div class="content-grid">
-    <a href="/letratos/en/" class="content-card">
+    <a href="{{ '/en/' | relative_url }}" class="content-card">
       <h2>English</h2>
       <p>Browse poems in English</p>
     </a>
     
-    <a href="/letratos/es/" class="content-card">
+    <a href="{{ '/es/' | relative_url }}" class="content-card">
       <h2>Español</h2>
       <p>Explorar poemas en español</p>
     </a>
     
-    <a href="/letratos/photography/" class="content-card">
+    <a href="{{ '/photography/' | relative_url }}" class="content-card">
       <h2>Photography</h2>
       <p>Visual moments captured</p>
     </a>

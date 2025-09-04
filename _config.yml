@@ -3,8 +3,8 @@ email: contact@brandonjplambert.com
 description: >-
   A bilingual poetry collection featuring Spanish and English poems,
   with experimental HTML pieces and minimal, typography-focused design.
-baseurl: "/letratos"
-url: "https://bjpl.github.io"
+baseurl: ""
+url: "https://www.letratos.com"
 github_username: bjpl
 
 # Build settings
