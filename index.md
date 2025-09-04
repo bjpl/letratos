@@ -4,7 +4,7 @@ title: Home
 ---
 
 <div class="home">
-  <h1>Letratos</h1>
+  <img src="{{ '/assets/logotype.png' | relative_url }}" alt="Letratos" class="home-logo">
   <p class="site-intro">A bilingual collection of poetry and visual art.</p>
   
   <div class="content-grid">

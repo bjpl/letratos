@@ -51,6 +51,13 @@ body {
   text-decoration: none;
   color: $text-primary;
   letter-spacing: -0.02em;
+  display: inline-block;
+  
+  .site-logo {
+    height: 40px;
+    width: auto;
+    display: block;
+  }
 }
 
 .nav-links {
@@ -301,6 +308,13 @@ body {
 .home {
   text-align: center;
   padding: 3rem 0;
+  
+  .home-logo {
+    height: 80px;
+    width: auto;
+    margin: 0 auto 2rem;
+    display: block;
+  }
   
   h1 {
     font-size: 3rem;

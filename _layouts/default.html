@@ -14,7 +14,9 @@
 <body>
   <header class="site-header">
     <nav class="site-nav">
-      <a href="{{ '/' | relative_url }}" class="site-title">{{ site.title }}</a>
+      <a href="{{ '/' | relative_url }}" class="site-title">
+        <img src="{{ '/assets/logotype.png' | relative_url }}" alt="{{ site.title }}" class="site-logo">
+      </a>
       <div class="nav-links">
         <a href="{{ '/en/' | relative_url }}" class="{% if page.lang == 'en' %}active{% endif %}">English</a>
         <a href="{{ '/es/' | relative_url }}" class="{% if page.lang == 'es' %}active{% endif %}">Español</a>
