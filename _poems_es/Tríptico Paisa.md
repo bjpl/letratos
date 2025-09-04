@@ -34,7 +34,7 @@ En todo momento sigues las sonrisas,
 respirando aire de sueños,
 aprendiendo de las hojas en el río
 cuando remas contracorriente,
-buscando tu propia corriente.
+buscando tu propio rumbo.
 
 Y por eso vas
 hacia Medellín.
