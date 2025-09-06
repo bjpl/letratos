@@ -21,3 +21,5 @@ Fija ejemplares con agujas finas,
 y cuando no puedas nombrarlos
 
 Me entenderás mejor.
+
+ -Brandon JP Lambert

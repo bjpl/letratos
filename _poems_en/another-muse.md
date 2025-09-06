@@ -10,3 +10,5 @@ Watching you watch
      the ocean
 taught me new ways
           to see water
+
+ -Brandon JP Lambert

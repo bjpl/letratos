@@ -13,3 +13,5 @@ Some mornings I cry without
 knowing, if my tears will drown the earth
 
 or sustain it.
+
+ -Brandon JP Lambert

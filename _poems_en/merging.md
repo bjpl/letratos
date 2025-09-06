@@ -13,3 +13,5 @@ I tracked the new, toward my next exit.
 What was once unintended, now
 a sign, I veered
 toward myself.
+
+ -Brandon JP Lambert
