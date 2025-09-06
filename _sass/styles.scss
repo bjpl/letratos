@@ -428,9 +428,60 @@ body {
 }
 
 .site-intro {
-  font-size: 1.2rem;
-  color: $text-secondary;
   margin-bottom: 3rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  
+  .word-definition {
+    margin-bottom: 1rem;
+    
+    strong {
+      font-size: 1.4rem;
+      color: $text-primary;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+    }
+    
+    .phonetic {
+      color: $text-secondary;
+      font-style: italic;
+      font-size: 1rem;
+      margin-left: 0.25rem;
+    }
+    
+    .etymology {
+      display: block;
+      margin-top: 0.25rem;
+      font-size: 0.95rem;
+      color: $text-secondary;
+      
+      em {
+        color: $accent;
+        font-style: normal;
+        font-weight: 500;
+      }
+    }
+  }
+  
+  .definition-text {
+    font-size: 1.1rem;
+    color: $text-primary;
+    line-height: 1.6;
+    margin: 1.5rem 0;
+  }
+  
+  .spanish-quote {
+    font-size: 1rem;
+    color: $text-secondary;
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid $border;
+    
+    i {
+      display: block;
+    }
+  }
 }
 
 // Homepage content grid
