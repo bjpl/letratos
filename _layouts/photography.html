@@ -15,11 +15,23 @@ layout: default
         {% for image in page.images %}
         <div class="grid-item">
           <figure>
-            <img src="{{ image.url | relative_url }}" 
-                 alt="{{ image.alt | default: page.title }}" 
-                 loading="lazy"
-                 class="gallery-image"
-                 onclick="openLightbox('{{ image.url | relative_url }}', '{{ image.caption | escape }}')">
+            {% assign file_ext = image.url | split: '.' | last | downcase %}
+            {% if file_ext == 'mp4' or file_ext == 'webm' or file_ext == 'mov' %}
+              <video src="{{ image.url | relative_url }}"
+                     autoplay
+                     loop
+                     muted
+                     playsinline
+                     class="gallery-video"
+                     onclick="toggleVideo(this)">
+              </video>
+            {% else %}
+              <img src="{{ image.url | relative_url }}" 
+                   alt="{{ image.alt | default: page.title }}" 
+                   loading="lazy"
+                   class="gallery-image"
+                   onclick="openLightbox('{{ image.url | relative_url }}', '{{ image.caption | escape }}')">
+            {% endif %}
             {% if image.caption %}
             <figcaption class="image-caption">{{ image.caption }}</figcaption>
             {% endif %}
@@ -47,6 +59,30 @@ layout: default
 </div>
 
 <style>
+/* Video Styles */
+.gallery-video {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  position: relative;
+}
+
+.gallery-video:hover {
+  opacity: 0.95;
+}
+
+/* Simple play/pause overlay */
+.video-paused::after {
+  content: "▶";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 48px;
+  color: rgba(255, 255, 255, 0.8);
+  pointer-events: none;
+}
+
 .lightbox {
   display: none;
   position: fixed;
@@ -104,6 +140,29 @@ layout: default
 </style>
 
 <script>
+// Video control function
+function toggleVideo(video) {
+  if (video.paused) {
+    video.play();
+    video.classList.remove('video-paused');
+  } else {
+    video.pause();
+    video.classList.add('video-paused');
+  }
+}
+
+// Initialize videos on page load
+document.addEventListener('DOMContentLoaded', function() {
+  const videos = document.querySelectorAll('.gallery-video');
+  videos.forEach(video => {
+    // Start videos playing on load (already set with autoplay)
+    video.play().catch(e => {
+      // If autoplay fails, add paused class
+      video.classList.add('video-paused');
+    });
+  });
+});
+
 function openLightbox(src, caption) {
   const lightbox = document.getElementById('lightbox');
   const img = document.getElementById('lightbox-img');

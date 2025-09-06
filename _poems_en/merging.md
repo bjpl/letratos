@@ -3,7 +3,7 @@ layout: poem
 title: "Merging"
 date: 2024-01-15
 lang: en
-sketch: merging_sketch.png
+sketch: merging_video.mp4
 ---
 
 I was consumed by the moments before,

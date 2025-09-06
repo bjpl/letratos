@@ -147,13 +147,14 @@ body {
   text-align: center;
   animation: fadeIn 1s ease-in;
   
-  img {
+  img, .sketch-video {
     max-width: 90%;
     height: auto;
     border-radius: 12px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
     transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
-                box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+                box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+                opacity 0.3s ease;
     background: linear-gradient(to bottom, #f9f9f9, #ffffff);
     padding: 4px;
     
@@ -170,6 +171,12 @@ body {
     @media (min-width: 1024px) {
       max-width: 440px;
     }
+  }
+  
+  .sketch-video {
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
   }
 }
 

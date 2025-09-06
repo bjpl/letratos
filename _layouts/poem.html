@@ -18,10 +18,22 @@ layout: default
 
   {% if page.sketch %}
   <div class="poem-sketch">
-    <img src="{{ '/assets/sketches/' | append: page.sketch | relative_url }}" 
-         alt="Artistic sketch accompanying {{ page.title }}" 
-         loading="lazy"
-         decoding="async">
+    {% assign file_ext = page.sketch | split: '.' | last | downcase %}
+    {% if file_ext == 'mp4' or file_ext == 'webm' or file_ext == 'mov' %}
+      <video src="{{ '/assets/sketches/' | append: page.sketch | relative_url }}"
+             autoplay
+             loop
+             muted
+             playsinline
+             class="sketch-video"
+             onclick="togglePoemVideo(this)">
+      </video>
+    {% else %}
+      <img src="{{ '/assets/sketches/' | append: page.sketch | relative_url }}" 
+           alt="Artistic sketch accompanying {{ page.title }}" 
+           loading="lazy"
+           decoding="async">
+    {% endif %}
   </div>
   {% endif %}
 
@@ -53,3 +65,27 @@ layout: default
     {% endfor %}
   </nav>
 </article>
+
+<script>
+// Simple video toggle for poem sketches
+function togglePoemVideo(video) {
+  if (video.paused) {
+    video.play();
+    video.style.opacity = '1';
+  } else {
+    video.pause();
+    video.style.opacity = '0.9';
+  }
+}
+
+// Auto-start videos when they come into view
+document.addEventListener('DOMContentLoaded', function() {
+  const video = document.querySelector('.sketch-video');
+  if (video) {
+    video.play().catch(e => {
+      // If autoplay fails, show visual cue
+      video.style.opacity = '0.9';
+    });
+  }
+});
+</script>
