@@ -162,13 +162,13 @@ body {
       box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
     }
     
-    // Responsive sizing - reduced by half
+    // Responsive sizing - increased by 25% from half size
     @media (min-width: 768px) {
-      max-width: 300px;
+      max-width: 375px;
     }
     
     @media (min-width: 1024px) {
-      max-width: 350px;
+      max-width: 440px;
     }
   }
 }
@@ -191,7 +191,7 @@ body {
     margin: $spacing-unit 0;
     
     img {
-      max-width: 250px;
+      max-width: 315px;
       border-radius: 4px;
     }
   }
