@@ -13,11 +13,6 @@ lang: en
     <li>
       <a href="{{ poem.url | relative_url }}">
         <h2 class="poem-list-title">{{ poem.title }}</h2>
-        <div class="poem-list-meta">
-          {% if poem.date %}
-          <time>{{ poem.date | date: "%B %Y" }}</time>
-          {% endif %}
-        </div>
       </a>
     </li>
     {% endfor %}
