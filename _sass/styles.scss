@@ -427,7 +427,15 @@ body {
   }
 }
 
-.site-intro {
+// Homepage intro
+.home .site-intro {
+  font-size: 1.2rem;
+  color: $text-secondary;
+  margin-bottom: 3rem;
+}
+
+// About page definition styling
+.about-container .site-intro {
   margin-bottom: 3rem;
   max-width: 600px;
   margin-left: auto;
