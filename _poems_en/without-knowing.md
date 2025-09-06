@@ -3,6 +3,7 @@ layout: poem
 title: "Without knowing"
 date: 2024-02-15
 lang: en
+sketch: without_knowing_sketch.png
 ---
 
 That without you I still

@@ -14,6 +14,15 @@ layout: default
     {% endif %}
   </header>
 
+  {% if page.sketch %}
+  <div class="poem-sketch">
+    <img src="{{ '/assets/sketches/' | append: page.sketch | relative_url }}" 
+         alt="Artistic sketch accompanying {{ page.title }}" 
+         loading="lazy"
+         decoding="async">
+  </div>
+  {% endif %}
+
   <div class="poem-content">
     {{ content }}
   </div>

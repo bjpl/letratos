@@ -4,6 +4,7 @@ date: 2025-08-31
 layout: poem
 lang: es
 categories: [spanish, triptych, travel, introspection]
+sketch: hacia_medellin_sketch.png
 ---
 
 ### Hacia Medellín

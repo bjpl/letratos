@@ -3,6 +3,7 @@ layout: poem
 title: "Together"
 date: 2024-02-01
 lang: en
+sketch: together_sketch.png
 ---
 
 My news is not new.

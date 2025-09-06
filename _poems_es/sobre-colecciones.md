@@ -3,6 +3,7 @@ layout: poem
 title: "Sobre colecciones"
 date: 2024-02-20
 lang: es
+sketch: sobre_colleciones_sketch.png
 ---
 
 Soy un coleccionista.
