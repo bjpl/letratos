@@ -4,11 +4,13 @@ layout: default
 <article class="poem">
   <header class="poem-header">
     <h1 class="poem-title">{{ page.title }}</h1>
+    {% comment %}
     {% if page.date %}
     <time class="poem-date" datetime="{{ page.date | date_to_xmlschema }}">
       {{ page.date | date: "%B %d, %Y" }}
     </time>
     {% endif %}
+    {% endcomment %}
     {% if page.collection_name %}
     <span class="poem-collection">{{ page.collection_name }}</span>
     {% endif %}
