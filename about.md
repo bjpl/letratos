@@ -21,6 +21,6 @@ permalink: /about/
   </div>
   
   <div class="bio">
-    <p>Brandon is a California native who writes poetry in English and Spanish. He also takes photos.</p>
+    <p>Brandon is a California native who writes poetry in English and Spanish. He also takes photos and makes up words.</p>
   </div>
 </div>
