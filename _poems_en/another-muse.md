@@ -3,7 +3,7 @@ layout: poem
 title: "Another muse"
 date: 2025-09-01
 lang: en
-sketch: another_muse_video.mp4
+sketch: another_muse_sketch.png
 ---
 
 Watching you watch

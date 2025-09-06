@@ -3,7 +3,7 @@ layout: poem
 title: "Garden moment"
 date: 2024-01-20
 lang: en
-sketch: garden_moment_video.mp4
+sketch: garden_moment_sketch.png
 ---
 
 Under a leaf in the shape of a heart,
