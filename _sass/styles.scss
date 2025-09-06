@@ -143,12 +143,12 @@ body {
 
 // Poem sketch
 .poem-sketch {
-  margin: $spacing-unit * 2.5 0;
+  margin: $spacing-unit * 2 0;
   text-align: center;
   animation: fadeIn 1s ease-in;
   
   img {
-    max-width: 100%;
+    max-width: 90%;
     height: auto;
     border-radius: 12px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
@@ -162,13 +162,13 @@ body {
       box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
     }
     
-    // Responsive sizing
+    // Responsive sizing - reduced by half
     @media (min-width: 768px) {
-      max-width: 600px;
+      max-width: 300px;
     }
     
     @media (min-width: 1024px) {
-      max-width: 700px;
+      max-width: 350px;
     }
   }
 }
@@ -191,6 +191,7 @@ body {
     margin: $spacing-unit 0;
     
     img {
+      max-width: 250px;
       border-radius: 4px;
     }
   }
