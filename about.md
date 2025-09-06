@@ -7,7 +7,7 @@ permalink: /about/
 <div class="about-container">
   <h1>About</h1>
   
-  <div class="poem-sketch">
+  <div class="about-sketch">
     <img src="{{ '/assets/sketches/about_sketch.png' | relative_url }}" 
          alt="Artistic sketch for the about page" 
          loading="lazy"

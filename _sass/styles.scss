@@ -197,6 +197,50 @@ body {
   }
 }
 
+// About page sketch - smaller than poem sketches
+.about-sketch {
+  margin: $spacing-unit * 1.5 0;
+  text-align: center;
+  animation: fadeIn 1s ease-in;
+  
+  img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
+                box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    background: linear-gradient(to bottom, #f9f9f9, #ffffff);
+    padding: 4px;
+    
+    &:hover {
+      transform: translateY(-3px) scale(1.02);
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+    }
+    
+    // Responsive sizing - 60% of poem sketch sizes
+    @media (min-width: 768px) {
+      max-width: 225px;  // 60% of 375px
+    }
+    
+    @media (min-width: 1024px) {
+      max-width: 265px;  // 60% of 440px
+    }
+  }
+}
+
+// Mobile layout for about sketch
+@media (max-width: 480px) {
+  .about-sketch {
+    margin: $spacing-unit 0;
+    
+    img {
+      max-width: 190px;  // 60% of 315px
+      border-radius: 4px;
+    }
+  }
+}
+
 // Translation link
 .translation-link {
   text-align: center;
